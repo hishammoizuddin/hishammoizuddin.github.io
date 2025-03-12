@@ -3415,7 +3415,7 @@ img.u-pull-left {
 
 .about-info__text {
     padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
-    margin-left : -4rem;
+    margin-left : 4rem;
 }
 
 .about-info__text .text-pretitle {
@@ -4249,4 +4249,24 @@ img.u-pull-left {
       max-width: 100%;
     }
   } */
+  @media screen and (max-width: 600px) {
+    /* Make the modal container responsive */
+    .modal-popup {
+      width: 90%;
+      max-width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      margin: 1rem auto;
+      padding: 1rem;
+    }
+    
+    /* Ensure images inside modals scale properly */
+    .modal-popup img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
   
